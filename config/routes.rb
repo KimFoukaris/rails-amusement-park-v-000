@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   resources :attractions, only: [:index, :new, :create, :show]
   resources :rides, only: [:create]
 
+  namespace :admin do
+    resources :attractions, only: [:index, :new, :create, :edit]
+  end
+
   root 'welcome#home'
 end
