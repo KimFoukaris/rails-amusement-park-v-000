@@ -1,14 +1,14 @@
-<%= @user.name %>
+<%= @user.name %><br>
 <% if @user.admin %>
-  ADMIN
+  ADMIN<br>
 <% else %>
-  Mood: <%= @user.mood %>
-  Height: <%= @user.height %>
-  Tickets:  <%= @user.tickets %>
+  Mood: <%= @user.mood %><br>
+  Height: <%= @user.height %><br>
+  Tickets:  <%= @user.tickets %><br>
 <% end %>
 
 <% if flash[:notice] %>
-    <div class="notice"><%= flash[:notice] %></div>
+    <div class="notice"><%= flash[:notice] %></div><br>
   <% end %>
 
 <%= link_to "See attractions", attractions_path %>
