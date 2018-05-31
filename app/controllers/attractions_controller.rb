@@ -24,7 +24,6 @@ class AttractionsController < ApplicationController
 
   def update
     @attraction = Attraction.update(params[:id], attraction_params)
-    #binding pry
     redirect_to attraction_path(@attraction)
   end
 
