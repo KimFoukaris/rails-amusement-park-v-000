@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :rides, only: [:create]
 
   namespace :admin do
-    resources :attractions, only: [:index, :new, :create, :edit]
+    resources :attractions, only: [:index, :new, :create, :edit, :show]
   end
 
   root 'welcome#home'
