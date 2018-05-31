@@ -1,7 +1,7 @@
 <%= @user.name %><br>
 <% if @user.admin %>
   ADMIN<br>
-  <%= link_to "See attractions", new_attraction_path %><br>
+  <%= link_to "See attractions", admin_attraction_path %><br>
 <% else %>
   Mood: <%= @user.mood %><br>
   Height: <%= @user.height %><br>
