@@ -1,3 +1,3 @@
 <% @attractions.each do |attraction| %>
-  <%= link_to "#{attraction.name}", attraction_path(attraction) %><br>
+  <%= link_to "#{attraction.name}", admin_attractions_path(attraction) %><br>
 <% end %>
