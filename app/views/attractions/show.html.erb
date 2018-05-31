@@ -1,7 +1,7 @@
 <%= @attraction.name %>
 
 <% if @user.admin %>
-  <%= link_to edit_attraction_route(@attraction) %>
+  <%= link_to edit_attraction_path(@attraction) %>
 <% else %>
   <%= form_tag rides_path do %>
     <%= text_field_tag :user_id, value=session[:user_id] %>
