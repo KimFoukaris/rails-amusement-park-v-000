@@ -8,4 +8,12 @@ class AttractionsController < ApplicationController
     @attraction = Attraction.find(params[:id])
     current_user
   end
+
+  def new
+    @attraction = Attraction.new
+  end
+
+  def create
+
+  end
 end
