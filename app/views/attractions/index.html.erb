@@ -1,7 +1,3 @@
 <% @attractions.each do |attraction| %>
-  <% if @user %>
-    <%= link_to "#{attraction.name}", attraction_path(attraction) %><br>
-  <% else %>
-    <%= link_to "Go on #{attraction.name}", attraction_path(attraction) %><br>
-  <% end %>
+  <%= link_to "Go on #{attraction.name}", attraction_path(attraction) %><br>
 <% end %>
