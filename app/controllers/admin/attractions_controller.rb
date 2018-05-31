@@ -1,5 +1,7 @@
 class Admin::AttractionsController < ApplicationController
   def index
+    @attractions = Attraction.all
+    current_user
   end
 
   def new
